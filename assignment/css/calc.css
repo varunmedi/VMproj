@@ -1,0 +1,48 @@
+body{
+    background-color : #E7E9EB
+}
+::selection{
+    background-color : orange
+}
+#no1{
+    color:red
+}
+#no2{
+    color: green
+}
+#result{
+    color: indigo;
+}
+#button1{
+    background-color: green;
+    border : none;
+    color:white;
+    border-radius:10px;
+    cursor: pointer;
+}
+#button2{
+    background-color: violet;
+    border: none;
+    color:whitesmoke;
+    border-radius:10px;
+    cursor: pointer;
+}
+#button3{
+    background-color: red;
+    border:none;
+    color: white;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+
+#button4{
+    background-color: blue;
+    border:none;
+    color:white;
+    border-radius:10px;
+    cursor: pointer;
+}
+#first{
+    text-shadow: 1px 1px yellow;
+}

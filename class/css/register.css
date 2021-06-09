@@ -1,0 +1,48 @@
+.button{
+    color : black;
+    background-color : #00FF00;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+input:focus {
+    border: 2px solid #555;
+}
+a:link{
+    color:orange;
+    text-decoration: none;
+}
+a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+a.active{
+    color:palevioletred;
+}
+a:visited{
+    color:red;
+   
+}
+#id1{
+    color:red;
+
+}
+#id2{
+    color:green;
+    
+}
+#id3{
+    color:blueviolet;
+    
+}
+#id4{
+    color:goldenrod;
+    
+}
+#id5{
+    color:purple;
+    
+}
+body{
+    background-color: #E7E9EB;
+}
