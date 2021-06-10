@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var module1_1 = require("./module1");
+var module2_1 = require("./module2");
+console.log(module1_1.course);
+module1_1.ages.push(40);
+console.log(module1_1.ages);
+console.log("Student Id: " + module1_1.student.id + " and Student name is " + module1_1.student.fname);
+console.log(module1_1.getMessage('hi how are you?'));
+var calc = new module2_1.Calculator();
+console.log(calc.addOperation(2, 3));
