@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program<title>
+   <head>
+   <body> 
+      <form action='success.html'>
+         <fieldset>
+            <legend align='center'>Registration Form</legend>
+         <pre>
+         UserName  : <input type='text'>
+         Password  : <input type='password'>   
+         Gender    : <input type='radio'>Male   <input type='radio'>Female 
+         Bikes     : <input type='checkbox'>Honda <input type='checkbox'>Hero
+         Address   : <textarea rows='2' cols='20'>KPHB, Hyderabad</textarea>
+         SelectAge : <select>
+            <option>Select Age</option>
+            <option>18Yrs-25Yrs</option>
+            <option>26Yrs-30Yrs</option>
+         </select>
+
+         <!-- <input type='submit' value='Register'> -->
+         <button type='submit'>Register</button>
+         </pre>
+         </fieldset>
+      </form>      
+   </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+        .myclass1{
+           color:blue;
+           font-size: 30px;
+        }    
+        .myclass2{
+           background-color: lightblue;
+           color:red;
+        }    
+      </style>
+   </head>
+   <body> 
+      <div class='myclass1 myclass2'>Hello Div</div>
+   </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+         div{
+            color:red;
+         }
+         .myClass{
+            color:blue;
+         }
+         #myId{
+            color:green;
+         }
+      </style>
+   </head>
+   <body> 
+      <div>Hello Div</div>
+     <div class='myClass'>Hello Div with CLass selector</div>
+     <p class='myClass'>Hello Para with class selector</p>
+
+     <div id='myId'>Hello Div with ID selector</div>
+     <p id='myId'>Hello para with ID selector</div>
+
+   </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+         *{
+            color:gray;
+         }
+      </style>
+   </head>
+   <body> 
+      <div>Hello Div</div>
+      <p>Hello Para</p>
+      <h3>Hello heading</h3>
+   </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+        a:link{
+           color:orange;
+           text-decoration: none;
+        }
+        a:hover{
+           color:green;
+           text-decoration: underline;
+        }
+        a:active{
+           color:palevioletred;
+        }
+        a:visited{
+           color:red
+        }
+      </style>
+   </head>
+   <body> 
+       <a href='contactus.html'>Contact Here</a>
+   </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+         div::first-line{
+            color:blue;
+            font-size: 20px;
+            background-color:lightblue
+         }
+         p::before{
+            content:'Mr '
+         }
+         p::after{
+            content:' Development'
+         }
+         ::selection{
+            color:white;
+            background-color:green
+         }
+      </style>
+   </head>
+   <body> 
+      <div>Chiranjeevi is the trainer for full stack development
+         Chiranjeevi is the trainer for full stack development
+         Chiranjeevi is the trainer for full stack development
+         Chiranjeevi is the trainer for full stack development
+      </div>
+      <p>Chiranjeevi is the trainer for full stack</p>
+   </body>
+</html>
+
+border-left:35px solid orangered;
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+         pre{
+            background: lightblue;
+            width:700px;
+            border-left:35px solid orangered;
+            border-right:35px solid green;
+            border-top:35px solid blue;
+            border-bottom:35px solid yellow;
+            padding:20px;
+            margin:30px;
+         }
+      </style>
+   </head>
+   <body> 
+     <pre>
+        Margin - Clears an area outside the border. The margin is transparent
+        Border - A border that goes around the padding and content
+        Padding - Clears an aread around the content. The padding also transparent
+        Content - The content of the box, where text and images appear
+     </pre>
+   </body>
+</html>

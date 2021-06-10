@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+         div{
+            width:200px;
+            height:200px;            
+            background-color: lightblue;
+            padding:10px;
+            -moz-border-radius: 100px;
+            -o-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+         }
+      </style>
+   </head>
+   <body> 
+      <div>
+         Rounded corners info
+      </div>
+   </body>
+</html>
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <style>
+         div{
+            width:200px;
+            height:200px;            
+            background-color: green;
+            color:white;
+            box-shadow: 10px 10px lightgray;
+            text-shadow: 1px 1px yellow;
+            font-size: 20px;
+         }
+      </style>
+   </head>
+   <body> 
+      <div>Chiranjeevi</div>
+   </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <script>
+        document.write('hello JS')
+        /*console.log('hello JS')
+        alert('hello JS')*/
+      </script>
+   </head>
+   <body> 
+   </body>
+</html>
+<!DOCTYPE html>
+<html>
+   <head> 
+      <title>HTML Program</title>
+      <script src='../js/global.js'></script>
+   </head>
+   <body> 
+      <h1>Javascript Examples</h1><hr>
+      <pre>
+        Age:<input type='text' id='myage'>
+
+        <button onclick="getModifyData()">Send Data</button>
+      </pre>
+   </body>
+</html>
+function getModifyData(){
+    var myAge = document.getElementById('myage').value
+    var marriage = (myAge<20)?'You are not eligible':"Your are eligable"
+    console.log(marriage)
+}
+
+var course='java';
+if(course == 'java'){
+  console.log('java course selected')
+}
+else if(course == 'dotnet'){
+console.log('dotnet course selected')
+}
+else{
+  console.log('angular course selected')
+}
+var grade = 'A'
+switch(grade){
+    case 'A': console.log('Distinction')
+    break;
+    case 'B': console.log('First Class')
+    break;
+    default: console.log('You are not passed')
+}
+// for(var i=0; i<10; i++){
+//     console.log(i); //0123456789
+// }
+// var i=0;
+// while(i<10){
+//     console.log(i)
+//     i++
+// }
+
+var i =0;
+do{
+    console.log(i)
+    i++
+}
+while(i<10)
+
+for(var i=0; i<10; i++){
+   if(i==5){
+    continue; //break
+   }
+   console.log(i); //01234
+}
+
+function addition(firstNumber, secondNumber){
+  var addResult = firstNumber + secondNumber;
+  return addResult;
+} 
+var result = addition(2,3)
+console.log(result)
+
+function addition(firstNumber, secondNumber){
+    return firstNumber + secondNumber;   
+} 
+console.log(addition(4,3))
+var addition = function add(firstNumber, secondNumber){
+    return firstNumber + secondNumber;   
+} 
+console.log(addition(4,6))
+var factorial = function comupteFactorial(number){
+    if(number <=1){
+        return 1
+    }
+    else{
+        return number*comupteFactorial(number-1)
+    }
+} 
+console.log(factorial(6))
+var factorial = function comupteFactorial(number){
+    if(number <=1)
+        return 1
+    else
+        return number*comupteFactorial(number-1)
+} 
+console.log(factorial(4))
+var factorial = function comupteFactorial(number){
+    return (number<=1)? 1: number*comupteFactorial(number-1)
+} 
+console.log(factorial(4))
+var result = (function add(a,b){
+    return a+b
+})(2,3)
+console.log(result)
+
+console.log('statement 1')
+setTimeout(function myFunc(){
+ console.log('statement 2')
+},2000)
+console.log('statement 3')
