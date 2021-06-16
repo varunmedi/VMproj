@@ -1,0 +1,15 @@
+<div *ngIf='showProduct'>Show this product</div>
+
+<div [ngSwitch]='course'>
+    <div *ngSwitchCase="'java'">Java course selected</div>
+    <div *ngSwitchCase="'dotnet'">.Net course selected</div>
+    <div *ngSwitchDefault="'java'">Angular course selected</div>
+</div>
+
+<ul *ngFor='let product of products'>
+    <li>{{product}}</li>
+</ul>
+
+<ol *ngFor='let employee of employees'>
+    <li>{{employee.empId}}-{{employee.empName}}-{{employee.salary}}</li>
+</ol>

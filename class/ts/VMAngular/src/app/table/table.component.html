@@ -1,0 +1,16 @@
+<p>table works!</p>
+<table border="5px" *ngIf='customers.length>0' myColor>
+    <tr>
+        <th>Customer Id</th>
+        <th>Customer Name</th>
+        <th>Salary</th>
+        <th>Customer DOB</th>
+        <th>Customer Image</th>
+    </tr>
+    <tr *ngFor='let customer of customers'>
+        <td>{{customer.custId }}</td>
+        <td>{{customer.custName | uppercase}}</td>
+        <td>{{customer.salary| currency:'INR'}}</td>
+        <td>{{customer.custDOB | date}}</td>
+        <td><img [src]='customer.custImage'height=50px width=50px></td>
+</table>

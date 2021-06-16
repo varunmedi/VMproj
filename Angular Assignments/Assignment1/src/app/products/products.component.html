@@ -1,0 +1,29 @@
+
+<h2 style="text-align:center">Product Table</h2>
+Search: <input type='text' [(ngModel)]="searchName" >
+Sort: <select [(ngModel)]='sortValue'>
+    <option value="prodId"> ID</option>
+    <option value="prodName">Name</option>
+    <option value="price">Price</option>
+    <option value="expiry">Expiry</option>
+    <option value="prodImage">Image</option>
+    </select>
+<table border="5" *ngIf='products.length > 0' myColor>
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Product Expiry</th>
+        <th>Product Image</th>
+    </tr>
+    <tr *ngFor='let product of products | filtername : searchName | sortname : sortValue'>
+        <td>{{product.prodId }}</td>
+        <td>{{product.prodName | titlecase}}</td>
+        <td>{{product.price| currency:'INR'}}</td>
+        <td>{{product.expiry | date}}</td>
+        <td><img [src]='product.prodImage'height=50px width=50px></td>
+</table>
+
+
+ <!-- {{products}} -->
+

@@ -7,6 +7,13 @@ import { RameshComponent } from './ramesh/ramesh.component';
 import { InterpolationBindingComponent } from './interpolation-binding/interpolation-binding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayComponent } from './two-way/two-way.component';
+import { FormsModule } from '@angular/forms';
+import { ClassStyleBindingComponent } from './class-style-binding/class-style-binding.component';
+import { PreDirectivesComponent } from './pre-directives/pre-directives.component';
+import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
+import { MyColorDirective } from './my-color.directive';
+import { TableComponent } from './table/table.component'
 
 @NgModule({
   declarations: [
@@ -15,10 +22,16 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     RameshComponent,
     InterpolationBindingComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayComponent,
+    ClassStyleBindingComponent,
+    PreDirectivesComponent,
+    AttributeDirectivesComponent,
+    MyColorDirective,
+    TableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
